@@ -231,7 +231,7 @@ namespace PDoc.ViewModels
         private ICommand? _openPdfCommand;
         private ICommand? _openFolderCommand;
 
-        public required string FilePath { get; set; }
+        public string FilePath { get; set; }
         public string FileName
         {
             get

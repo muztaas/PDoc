@@ -3251,9 +3251,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc\\src\\PDoc\\PDoc.csproj",
-      "projectName": "PDoc",
-      "projectPath": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc\\src\\PDoc\\PDoc.csproj",
+      "projectUniqueName": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc\\src\\PDoc\\PDoc2.csproj",
+      "projectName": "PDoc2",
+      "projectPath": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc\\src\\PDoc\\PDoc2.csproj",
       "packagesPath": "C:\\Users\\MUZTABA\\.nuget\\packages\\",
       "outputPath": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc\\src\\PDoc\\obj\\",
       "projectStyle": "PackageReference",
