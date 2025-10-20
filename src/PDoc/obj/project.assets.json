@@ -3251,11 +3251,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc\\src\\PDoc\\PDoc2.csproj",
+      "projectUniqueName": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc2\\src\\PDoc\\PDoc2.csproj",
       "projectName": "PDoc2",
-      "projectPath": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc\\src\\PDoc\\PDoc2.csproj",
+      "projectPath": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc2\\src\\PDoc\\PDoc2.csproj",
       "packagesPath": "C:\\Users\\MUZTABA\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc\\src\\PDoc\\obj\\",
+      "outputPath": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc2\\src\\PDoc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
