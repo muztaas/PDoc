@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright  2025")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Word to PDF Converter")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b75a87f2912a8e86f2364a6d8e31a780d66b3e4d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76306b1c8b0de487e5b16b6d1283507a8926d63f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PDoc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PDoc2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
