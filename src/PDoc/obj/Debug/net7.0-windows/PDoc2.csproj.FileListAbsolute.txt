@@ -3108,6 +3108,8 @@ D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc2.pdb
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc2.genruntimeconfig.cache
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\ref\PDoc2.dll
+D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\PDoc2.exe
+D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\PDoc2.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\Python\adsi.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\Python\authorization.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\Python\axcontrol.pyd
@@ -6168,10 +6170,8 @@ D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\Python\_win32sysloader.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\Python\_winxptheme.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\Python\_zoneinfo.pyd
-D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\PDoc2.exe
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\PDoc2.deps.json
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\PDoc2.runtimeconfig.json
-D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\PDoc2.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\PDoc2.pdb
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc2\src\PDoc\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll

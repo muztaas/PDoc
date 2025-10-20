@@ -31,7 +31,7 @@ namespace PDoc.ViewModels
 
         public ICommand SelectFilesCommand { get; }
         public ICommand ConvertCommand { get; }
-        
+
         public ICommand SelectSaveLocationCommand => _selectSaveLocationCommand ??= new RelayCommand(file =>
         {
             var docFile = file as DocFile;
@@ -144,7 +144,7 @@ namespace PDoc.ViewModels
 
                         file.Status = FileStatus.Converting;
                         var pdfPath = file.CustomPdfPath ?? Path.ChangeExtension(file.FilePath, ".pdf");
-                        
+
                         var pdfDirectory = Path.GetDirectoryName(pdfPath);
                         if (!Directory.Exists(pdfDirectory))
                         {
@@ -175,7 +175,7 @@ namespace PDoc.ViewModels
                         }
 
                         await _pythonService.ConvertToPdf(file.FilePath, pdfPath);
-                        
+
                         if (!File.Exists(pdfPath))
                         {
                             file.Status = FileStatus.Failed;
@@ -232,6 +232,7 @@ namespace PDoc.ViewModels
         private ICommand? _openFolderCommand;
 
         public string FilePath { get; set; }
+
         public string FileName
         {
             get
@@ -280,10 +281,30 @@ namespace PDoc.ViewModels
                 {
                     _pdfPath = value;
                     OnPropertyChanged();
+                    OnPropertyChanged(nameof(TruncatedPdfPath));
                 }
             }
         }
-        
+
+        public string? TruncatedPdfPath
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(PdfPath))
+                    return null;
+
+                const int maxLength = 60;
+                const int tailLength = 10;
+
+                if (PdfPath.Length <= maxLength)
+                    return PdfPath;
+
+                string start = PdfPath.Substring(0, maxLength - tailLength - 3);
+                string end = PdfPath.Substring(PdfPath.Length - tailLength);
+                return $"{start}...{end}";
+            }
+        }
+
         public FileStatus Status
         {
             get => _status;

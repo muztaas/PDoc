@@ -140,7 +140,7 @@
                                 <!-- PDF File Info -->
                                 <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="30,8,0,0" HorizontalAlignment="Right" Visibility="{Binding Status, Converter={StaticResource CompletedToVisibilityConverter}}">
                                     <TextBlock Text="PDF: " Foreground="#666666" VerticalAlignment="Center"/>
-                                    <TextBlock Text="{Binding PdfPath}" Foreground="#666666" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                                    <TextBlock Text="{Binding TruncatedPdfPath}" Foreground="#666666" VerticalAlignment="Center" Margin="0,0,10,0" Visibility="{Binding TruncatedPdfPath, Converter={StaticResource NullToCollapsedConverter}}"/>
                                     <Button Content="Open PDF" Command="{Binding OpenPdfCommand}" Style="{StaticResource MaterialButton}" Margin="0,0,8,0" MinWidth="140" Padding="12,6"/>
                                     <Button Content="Open Folder" Command="{Binding OpenFolderCommand}" Style="{StaticResource MaterialButton}" MinWidth="140" Padding="12,6" Margin="0,0,20,0"/>
                                 </StackPanel>
