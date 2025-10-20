@@ -1,5 +1,3 @@
-D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\pythoncom.pyd
-D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\pywintypes.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\adsi.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\authorization.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\axcontrol.pyd
@@ -2989,8 +2987,10 @@ D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\python310.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\python310.zip
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\python310._pth
+D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\pythoncom.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\pythoncom310.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\pythonw.exe
+D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\pywintypes.pyd
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\pywintypes310.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\Scripts\docx2pdf.exe
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Python\Scripts\pip.exe
@@ -3089,18 +3089,19 @@ D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.csproj.AssemblyReference.cache
-D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\MainWindow.baml
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\MainWindow.g.cs
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\App.g.cs
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc_MarkupCompile.cache
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc_MarkupCompile.lref
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\App.baml
+D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\MainWindow.baml
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.g.resources
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.GeneratedMSBuildEditorConfig.editorconfig
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.AssemblyInfoInputs.cache
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.AssemblyInfo.cs
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.csproj.CoreCompileInputs.cache
+D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.sourcelink.json
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.csproj.Up2Date
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\PDoc.dll
 D:\Documents\E-Books & Codes\Codes\Work\DoxReader\PDoc\src\PDoc\obj\Debug\net7.0-windows\refint\PDoc.dll

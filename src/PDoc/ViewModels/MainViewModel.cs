@@ -24,11 +24,48 @@ namespace PDoc.ViewModels
         private readonly PythonHostingService _pythonService;
         private bool _isConverting;
         private string? _errorMessage;
+        private bool _areAllFilesSelected = true;
+        private ICommand? _selectSaveLocationCommand;
 
         public ObservableCollection<DocFile> Files { get; } = new();
 
         public ICommand SelectFilesCommand { get; }
         public ICommand ConvertCommand { get; }
+        
+        public ICommand SelectSaveLocationCommand => _selectSaveLocationCommand ??= new RelayCommand(file =>
+        {
+            var docFile = file as DocFile;
+            if (docFile == null) return;
+
+            var dialog = new SaveFileDialog
+            {
+                Filter = "PDF Files|*.pdf",
+                FileName = Path.GetFileNameWithoutExtension(docFile.FilePath) + ".pdf",
+                InitialDirectory = Path.GetDirectoryName(docFile.FilePath)
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                docFile.CustomPdfPath = dialog.FileName;
+            }
+        });
+
+        public bool AreAllFilesSelected
+        {
+            get => _areAllFilesSelected;
+            set
+            {
+                if (_areAllFilesSelected != value)
+                {
+                    _areAllFilesSelected = value;
+                    foreach (var file in Files)
+                    {
+                        file.IsSelected = value;
+                    }
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         public bool IsConverting
         {
@@ -74,26 +111,85 @@ namespace PDoc.ViewModels
 
         private async Task Convert()
         {
-            if (Files.Count == 0) return;
+            var selectedFiles = Files.Where(f => f.IsSelected).ToList();
+            if (selectedFiles.Count == 0)
+            {
+                ErrorMessage = "Please select at least one file to convert.";
+                return;
+            }
 
             IsConverting = true;
             ErrorMessage = null;
 
             try
             {
-                foreach (var file in Files.ToList())
+                foreach (var file in selectedFiles)
                 {
                     try
                     {
-                        var pdfPath = Path.ChangeExtension(file.FilePath, ".pdf");
+                        if (!File.Exists(file.FilePath))
+                        {
+                            file.Status = FileStatus.Failed;
+                            file.ErrorMessage = "File not found.";
+                            continue;
+                        }
+
+                        var fileInfo = new FileInfo(file.FilePath);
+                        if (fileInfo.Length == 0)
+                        {
+                            file.Status = FileStatus.Failed;
+                            file.ErrorMessage = "File is empty.";
+                            continue;
+                        }
+
+                        file.Status = FileStatus.Converting;
+                        var pdfPath = file.CustomPdfPath ?? Path.ChangeExtension(file.FilePath, ".pdf");
+                        
+                        var pdfDirectory = Path.GetDirectoryName(pdfPath);
+                        if (!Directory.Exists(pdfDirectory))
+                        {
+                            try
+                            {
+                                Directory.CreateDirectory(pdfDirectory!);
+                            }
+                            catch (Exception ex)
+                            {
+                                file.Status = FileStatus.Failed;
+                                file.ErrorMessage = $"Failed to create output directory: {ex.Message}";
+                                continue;
+                            }
+                        }
+
+                        if (File.Exists(pdfPath))
+                        {
+                            try
+                            {
+                                File.Delete(pdfPath);
+                            }
+                            catch (Exception ex)
+                            {
+                                file.Status = FileStatus.Failed;
+                                file.ErrorMessage = $"Failed to overwrite existing PDF: {ex.Message}";
+                                continue;
+                            }
+                        }
+
                         await _pythonService.ConvertToPdf(file.FilePath, pdfPath);
+                        
+                        if (!File.Exists(pdfPath))
+                        {
+                            file.Status = FileStatus.Failed;
+                            file.ErrorMessage = "Conversion completed but PDF file was not created.";
+                            continue;
+                        }
+
                         file.PdfPath = pdfPath;
                         file.Status = FileStatus.Completed;
                     }
                     catch (Exception ex)
                     {
                         file.Status = FileStatus.Failed;
-                        file.ErrorMessage = ex.Message;
+                        file.ErrorMessage = $"Conversion failed: {ex.Message}";
                         ErrorMessage = $"Error converting {file.FileName}: {ex.Message}";
                     }
                 }
@@ -130,11 +226,50 @@ namespace PDoc.ViewModels
         private FileStatus _status = FileStatus.Pending;
         private string? _errorMessage;
         private string? _pdfPath;
+        private string? _customPdfPath;
+        private bool _isSelected = true;
         private ICommand? _openPdfCommand;
         private ICommand? _openFolderCommand;
 
         public required string FilePath { get; set; }
-        public string FileName => Path.GetFileName(FilePath);
+        public string FileName
+        {
+            get
+            {
+                var fileName = Path.GetFileName(FilePath);
+                if (fileName.Length > 50)
+                {
+                    return $"{fileName.Substring(0, 40)}...{fileName.Substring(fileName.Length - 10)}";
+                }
+                return fileName;
+            }
+        }
+
+        public string? CustomPdfPath
+        {
+            get => _customPdfPath;
+            set
+            {
+                if (_customPdfPath != value)
+                {
+                    _customPdfPath = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public bool IsSelected
+        {
+            get => _isSelected;
+            set
+            {
+                if (_isSelected != value)
+                {
+                    _isSelected = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         public string? PdfPath
         {
