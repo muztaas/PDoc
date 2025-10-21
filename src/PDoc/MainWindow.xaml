@@ -61,6 +61,19 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="SelectFilesButtonStyle" BasedOn="{StaticResource MaterialButton}" TargetType="Button">
+    <Setter Property="Background" Value="White"/>
+    <Setter Property="Foreground" Value="#2196F3"/>
+    <Style.Triggers>
+        <Trigger Property="IsMouseOver" Value="True">
+            <Setter Property="Background" Value="#E3F2FD"/> <!-- Slightly darker than white -->
+        </Trigger>
+        <Trigger Property="IsFocused" Value="True">
+            <Setter Property="Background" Value="#BBDEFB"/> <!-- Even darker on focus -->
+        </Trigger>
+    </Style.Triggers>
+</Style>
+
     </Window.Resources>
 
     <Grid>
@@ -74,7 +87,8 @@
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock Text="PDoc2" FontSize="34" Foreground="White" HorizontalAlignment="Center" FontWeight="Bold"/>
                 <TextBlock Text="Word to PDF Converter" FontSize="18" Foreground="White" Opacity="0.87" HorizontalAlignment="Center" Margin="0,4,0,20"/>
-                <Button Content="Select Files" Command="{Binding SelectFilesCommand}" Style="{StaticResource MaterialButton}" Background="White" Foreground="#2196F3" MinWidth="180"/>
+                <Button Content="Select Files" Command="{Binding SelectFilesCommand}" Style="{StaticResource SelectFilesButtonStyle}" MinWidth="180"/>
+
             </StackPanel>
         </Border>
 
