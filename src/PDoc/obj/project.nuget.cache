@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QzD8jXCSnyQ=",
+  "dgSpecHash": "LCW8Da9VG3g=",
   "success": true,
-  "projectFilePath": "D:\\Documents\\E-Books & Codes\\Codes\\Work\\DoxReader\\PDoc2\\src\\PDoc\\PDoc2.csproj",
+  "projectFilePath": "C:\\Users\\MUZTABA\\Downloads\\PDoc2\\src\\PDoc\\PDoc2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -32,21 +32,15 @@
     "C:\\Users\\MUZTABA\\.nuget\\packages\\system.diagnostics.eventlog\\7.0.0\\system.diagnostics.eventlog.7.0.0.nupkg.sha512",
     "C:\\Users\\MUZTABA\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\MUZTABA\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\7.0.20\\microsoft.netcore.app.runtime.win-x86.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.20\\microsoft.netcore.app.runtime.win-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\7.0.20\\microsoft.netcore.app.runtime.win-arm64.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\7.0.20\\microsoft.windowsdesktop.app.runtime.win-x86.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.20\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\7.0.20\\microsoft.windowsdesktop.app.runtime.win-arm64.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\7.0.20\\microsoft.aspnetcore.app.runtime.win-x86.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.20\\microsoft.aspnetcore.app.runtime.win-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\7.0.20\\microsoft.aspnetcore.app.runtime.win-arm64.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\7.0.20\\microsoft.netcore.app.host.win-x86.7.0.20.nupkg.sha512",
-    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.host.win-arm64\\7.0.20\\microsoft.netcore.app.host.win-arm64.7.0.20.nupkg.sha512"
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\9.0.10\\microsoft.netcore.app.runtime.win-x86.9.0.10.nupkg.sha512",
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\9.0.10\\microsoft.aspnetcore.app.runtime.win-x86.9.0.10.nupkg.sha512",
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\9.0.10\\microsoft.netcore.app.runtime.win-arm64.9.0.10.nupkg.sha512",
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.10\\microsoft.aspnetcore.app.runtime.win-x64.9.0.10.nupkg.sha512",
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\9.0.10\\microsoft.windowsdesktop.app.runtime.win-arm64.9.0.10.nupkg.sha512",
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.10\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.10.nupkg.sha512",
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\9.0.10\\microsoft.aspnetcore.app.runtime.win-arm64.9.0.10.nupkg.sha512",
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.10\\microsoft.netcore.app.runtime.win-x64.9.0.10.nupkg.sha512",
+    "C:\\Users\\MUZTABA\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\9.0.10\\microsoft.windowsdesktop.app.runtime.win-x86.9.0.10.nupkg.sha512"
   ],
   "logs": []
 }
