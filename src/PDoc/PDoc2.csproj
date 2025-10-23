@@ -17,7 +17,12 @@
     <Copyright>Copyright  2025</Copyright>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <ApplicationIcon>Images\pdoc-logo.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Images\pdoc-logo.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\pdoc-logo.png" />
